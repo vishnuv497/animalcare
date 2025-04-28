@@ -1,0 +1,15 @@
+.App {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f5ee;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Adjust for Header/Footer spacing */
+  main {
+    flex-grow: 1;
+  }
+  

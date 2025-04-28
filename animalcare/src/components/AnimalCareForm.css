@@ -1,0 +1,37 @@
+.animal-form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.animal-form-container h2 {
+  margin-bottom: 20px;
+}
+
+.animal-form-container form input,
+.animal-form-container form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.animal-form-container button {
+  padding: 10px 20px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}

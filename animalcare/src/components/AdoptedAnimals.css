@@ -1,0 +1,132 @@
+.adopted-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #fff1eb, #ace0f9);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.adopted-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+.animal-grid-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.animal-grid {
+  display: flex;
+  gap: 40px;
+  animation: slideLeft 20s linear infinite;
+  width: fit-content;
+}
+
+.animal-grid {
+  display: flex;
+  gap: 40px; /* Increased gap between cards */
+  overflow: hidden;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1400px; /* Increased max-width of the container */
+  margin: 0 auto; /* Center the grid */
+  animation: slideLeft 15s linear infinite;
+}
+
+/* Cards */
+.animal-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Increased card width */
+  transition: transform 0.3s ease;
+  width: 200px;
+  flex: 0 0 auto; 
+}
+
+.animal-card img {
+  width: 100%; /* Make the image fill the card */
+  height: 250px; /* Adjust image height */
+  object-fit: cover;
+}
+
+.animal-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.6rem; /* Increased font size for animal name */
+  color: #2b6cb0;
+}
+
+.animal-card p {
+  color: #555;
+  font-size: 1.1rem; /* Slightly increased font size for species */
+  margin-bottom: 10px;
+}
+
+.adopted-badge {
+  background-color: #38a169;
+  color: white;
+  padding: 6px 15px; /* Adjust padding for badge */
+  border-radius: 20px;
+  font-size: 0.95rem; /* Slightly larger font size for badge */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Slide animation */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Infinite sliding animation */
+.animal-grid {
+  animation: slideLeft 15s linear infinite;
+}
+
+/* Ensure responsiveness on smaller screens */
+@media (max-width: 1200px) {
+  .animal-grid {
+    max-width: 100%;
+  }
+
+  .animal-card {
+    width: 280px; /* Reduce card width for smaller screens */
+  }
+
+  .animal-card img {
+    height: 220px; /* Adjust image height for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .animal-grid {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center;
+  }
+
+  .animal-card {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 20px;
+  }
+
+  .animal-card img {
+    height: 200px; /* Adjust image height for smaller screens */
+  }
+}
