@@ -1,8 +1,8 @@
 **Open cmd and enter this commands**
 
-git clone https://github.com/codingacharya/react-vantara.git
+git clone https://github.com/vishnuv497/animalcare.git
 
-cd react-vantara
+cd animalcare
 
 cd backend
 
@@ -14,7 +14,7 @@ npm run dev
 
 **open new terminal**
 
-cd react-vantara
+cd animalcare
 
 npm install
 
